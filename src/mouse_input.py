@@ -40,7 +40,7 @@ class MouseInput:
 
     def save(self):
         data = json.dumps(self.data_store)
-        path = os.path.join(os.getenv('DATA_DIR'), self.objective + ".json")
+        path = os.path.join(os.getenv('DATA_DIR'), os.getenv('OBJECTIVE_DIR'), self.objective + ".json")
         with open(path, "w+") as file:
             file.write(data)
 

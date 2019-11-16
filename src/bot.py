@@ -20,7 +20,7 @@ class Bot:
         
     """
     def _load_objective(self):
-        data = os.path.join(os.getenv('DATA_DIR'), self.objective)
+        data = os.path.join(os.getenv('DATA_DIR'), os.getenv('OBJECTIVE_DIR'), self.objective)
         with open(data, "r") as file:
             brain = file.read()
             return json.loads(brain)
