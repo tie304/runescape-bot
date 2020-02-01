@@ -21,7 +21,7 @@ if __name__ == "__main__":
         MouseInput(args.name, args.n_times)
 
     elif args.action == "deploy":
-        bot = Bot(args.objective + ".json", n_loops=args.n_times)
+        bot = Bot(args.name + ".json", n_loops=args.n_times)
         bot.loop()
 
 

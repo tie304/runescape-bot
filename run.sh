@@ -1,1 +1,1 @@
-python3 app.py --name="mine-iron-large-screen" --n_times=200 --action="train"
+python3 app.py --name="recoil_enchant" --n_times=200 --action="train"
